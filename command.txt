@@ -1,0 +1,11 @@
+python3 -m venv project
+pip freeze > requirements.txt
+source project/bin/activate 
+deactivate
+
+python3 predict.py --type ae -id 69
+
+python main.py
+python3 predict.py --type vae -id 93
+
+python3 predict.py --type wgan -id 93
